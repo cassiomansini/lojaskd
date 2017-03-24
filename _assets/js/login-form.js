@@ -35,7 +35,7 @@ $(function(){
             return false;
         }
 
-        window.location = "/acompanhamento-pedido";
+        window.location = window.location.href + "/acompanhamento-pedido";
     });
 
 });
