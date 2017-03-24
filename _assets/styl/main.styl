@@ -1,0 +1,50 @@
+flex-version = flex
+support-for-ie = true
+vendor-prefixes = official
+
+@import 'nib'
+@import 'rupture'
+@import 'jeet'
+
+rupture.scale = 0     600px    800px     1200px
+rupture.scale-names = 'mobile' 'tablet' 'desktop'
+
+global-reset()
+
+azul = #0288d1;
+
+@import "_definitions/*";
+@import "_partials/*";
+@import "_elements/*";
+// @import "_pages/*";
+
+@-ms-viewport{
+  width: device-width;
+}
+
+.wrapper {
+  width 90%
+  max-width 1180px
+  margin 0 auto
+}
+
+.page {
+    height 100%
+    display flex
+    flex-direction column
+    background-image linear-gradient(#ffd740 0, #ffd740 4px, azul 4px, azul 206px)
+    background-size 1px 206px
+    background-repeat repeat-x
+    background-position top center
+    background-color #ebebeb
+    
+    &.login {
+        background-image linear-gradient(#ffd740 0, #ffd740 31px, #ebebeb 31px, #ebebeb 236px)
+        background-size 1px 236px
+        background-color azul
+    }
+    
+    .page-content {
+        flex 1
+    }
+}

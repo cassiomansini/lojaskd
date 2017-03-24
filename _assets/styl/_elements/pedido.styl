@@ -1,0 +1,49 @@
+section.pedido {
+    .wrapper {
+        overflow hidden
+
+        > * {
+            .panel {
+                width 100%
+                border-bottom 6px solid #ffd740
+            }
+        }
+    }
+
+    .detalhes {
+        col(3/12)
+        +below(1100px){
+            col(4/12)
+        }
+        +below(1000px){
+            col(6/12, cycle: 2)
+        }
+        +below(700px){
+            stack()
+        }
+    }
+    
+    .andamento {
+        col(4/12)
+        +below(1000px){
+            col(6/12, cycle: 2)
+        }
+        +below(700px){
+            stack()
+            margin-top 20px
+        }
+    }
+    
+    .produtos {
+        col(5/12)
+        +below(1100px){
+            col(4/12)
+        }
+        +below(1000px){
+            col(1)
+        }
+        +below(700px){
+            stack()
+        }
+    }
+}

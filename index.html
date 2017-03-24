@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="wrapper">
+    <h1 class="text-center mt-60">
+        <img src="assets/img/logo_lojaskd.png" alt="">
+    </h1>
+
+    <div class="panel login-panel mt-25">
+        <h2 class="login-header mb-35 mt-15">Acompanhar Pedido</h2>
+
+        <form method="post" accept-charset="utf-8" name="login-form" id="login-form">
+
+            <label class="input-group mb-20" for="numero_pedido">
+                <input type="text" name="numero_pedido" value="" onkeyup="this.setAttribute('value', this.value);" >
+                <span>Número do pedido <small class="required">*</small></span>
+                <div class="error">Não pode ficar em branco.</div>
+            </label>
+
+            <label class="input-group mb-15" for="identificacao_cliente">
+                <input type="text" name="identificacao_cliente" value="" onkeyup="this.setAttribute('value', this.value);" >
+                <span>CPF ou CNPJ <small class="required">*</small></span>
+                <div class="error">Não pode ficar em branco.</div>
+            </label>
+
+            <button type="submit" class="btn-submit">Acompanhar</button>
+
+        </form>
+
+        <p class="text-center mt-15 mb-0">
+            <a href="#" class="small">LojasKD.com.br</a>
+        </p>
+    </div>
+
+</div>

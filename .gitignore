@@ -1,0 +1,29 @@
+# Diretórios de packages
+node_modules/**
+**/node_modules/**
+bower_components/**
+**/bower_components/**
+
+# Pastas possívelmente buildadas do sistema
+/build/**
+/app/**
+/dist/**
+/deploy/**
+_site/**
+
+# Arquivos estranhos ao sistema / aplicação
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.sass-cache
+.jekyll-metadata
+ehthumbs.db
+Thumbs.db
+
+# Arquivos de layout
+*.psd
+
+# Arquivos de log
+*.log

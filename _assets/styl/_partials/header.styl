@@ -1,0 +1,94 @@
+header {
+    .wrapper {
+        display flex
+        align-items flex-start
+        font-family Roboto
+        font-size 16px
+        font-weight 100
+        position relative
+        
+        > * {
+            display flex
+            align-items center
+            color white
+            text-decoration none
+            i.fa {
+                margin-left 5px
+            }
+            
+            +below(700px){
+                display none
+            }
+        }
+        .page-title {
+            flex 1
+            display flex
+            flex-direction column
+            align-items flex-start
+            color white
+            font-size 18px
+            
+            a {
+                font-size 12px
+                font-family Lato
+                font-weight 400
+                color alpha(white, .6)
+                text-decoration none
+            }
+        }
+        .mobile-nav {
+            display none
+            flex-direction column
+            align-items flex-start
+            position absolute
+            top 35px
+            right 0
+            background-color white
+            box-shadow 0 0 4px 1px alpha(black, .15)
+            min-width 200px
+
+            >* {
+                padding 10px 15px
+                color #757575
+                display flex
+                align-items center
+                text-decoration none
+                
+                i.fa {
+                    font-size 14px
+                }
+                
+                &:first-child {
+                    background-color #fcd43f
+                    align-self stretch
+                }
+                &:last-child {
+                    border-top 1px solid #ebebeb
+                    align-self stretch
+                }
+            }
+        }
+        .mobile-nav-trigger {
+            size(40px)
+            align-items center
+            justify-content center
+            
+            i.fa {
+                margin 0
+            }
+
+            +above(701px){
+                display none
+            }
+            +below(700px){
+                display flex
+            }
+            font-size 27px
+            cursor pointer
+            
+            &.active + .mobile-nav {
+                display flex
+            }
+        }
+    }
+}

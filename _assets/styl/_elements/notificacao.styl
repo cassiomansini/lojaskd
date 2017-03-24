@@ -1,0 +1,38 @@
+.notificacao {
+    background-color #039be5
+    display inline-flex
+    border-radius 5px
+    color white
+    font-family Roboto
+    position relative
+    box-shadow 0 0 5px 3px alpha(black, .1)
+    
+    &:after {
+        content ''
+        position absolute
+        top -10px
+        right 0
+        size 0
+        border-top 10px solid transparent
+        border-bottom 10px solid transparent
+        border-left 20px solid transparent
+        border-right 20px solid #039be5
+    }
+    
+    .icon-wrap {
+        border-radius 5px 0 0 5px
+        background-color azul
+        font-size 40px
+        display flex
+        align-items center
+        justify-content center
+        width 88px
+    }
+    
+    .text-wrap {
+        padding 40px 10px
+        text-align center
+        flex 1
+    }
+    
+}

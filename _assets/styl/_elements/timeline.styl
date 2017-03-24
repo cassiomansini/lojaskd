@@ -1,0 +1,198 @@
+.timeline {
+    li {
+        display flex
+        align-items flex-start
+        
+        > * {
+            flex-shrink 0
+        }
+        
+        .date {
+            width 85px
+            text-align right
+            text-transform uppercase
+            color #bdbdbd
+            font-size 12px
+            margin-top 6px
+        }
+        
+        .status-icon {
+            width 55px
+            align-self stretch
+            position relative
+            .image-wrapper {
+                position absolute
+                top 0
+                left 50%
+                transform translateX(-50%)
+                z-index 2
+                size 25px
+                padding 5px
+                background #d7d7d7
+                border-radius 50%
+                svg {
+                    width 100%
+                    fill white
+                }
+            }
+            
+            &:before {
+                content ''
+                position absolute
+                top 5px
+                left 50%
+                transform translateX(-50%)
+                width 2px
+                bottom 0
+                background-color azul
+                z-index 1
+            }
+        }
+        
+        .status-text {
+            margin-top 4px
+            min-height 70px
+            flex 1
+            .accordion-content {
+                font-size 14px
+                color #a9a9a9
+                line-height 1.5
+                padding 15px 0
+            }
+            .accordion-header {
+                display flex
+                cursor pointer
+                .ui-accordion-header-icon {
+                    display none
+                }
+                span {
+                    flex 1
+                    font-size 16px
+                    color alpha(#757575, .6)
+                }
+                
+                img {
+                    align-self center
+                }
+            }
+            .info {
+                display flex
+                span {
+                    flex 1
+                }
+                .image-wrapper {
+                    width 30px
+                    padding 3px
+                    svg {
+                        width 100%
+                        fill white
+                    }
+                }
+            }
+        }
+        
+        &.done {
+            .status-icon .image-wrapper {
+                background-color azul
+            }
+            
+            .status-icon:before {
+                background-color azul
+            }
+            
+            &.last-done .status-icon:before {
+                background-color #4caf50
+            }
+        }
+        &.active {
+            .status-icon .image-wrapper {
+                background-color #4caf50
+            }
+            
+            .status-icon:before {
+                background-color #d7d7d7
+            }
+        }
+        
+        &.done .accordion-header .text-left,
+        &.active .accordion-header .text-left {
+            color #757575
+        }
+        
+        &:last-child .status-text {
+            min-height initial
+        }
+        &:last-child .status-icon:before {
+            content none
+        }
+    }
+}
+
+.timeline-horizontal {
+    display flex
+    align-items center
+    
+    i.fa {
+        size(50px)
+        background-color white
+        border 2px solid #d8d8d8
+        color #d8d8d8
+        border-radius 50%
+        display flex
+        align-items center
+        justify-content center
+        font-size 22px
+        
+        &.done {
+            border-color azul
+            color azul
+            
+            & + span {
+                background-color azul
+            }
+            
+            &.last-done + span {
+                background-color #4caf50
+            }
+        }
+
+        &.active {
+            border-color #4caf50
+            color #4caf50
+        }
+        
+        &.showinfo {
+            color white
+            background-color #d8d8d8
+            &.done {
+                background-color azul
+            }
+            
+            &.active {
+                background-color #4caf50
+            }
+        }
+    }
+    
+    span {
+        flex 1
+        height 2px
+        background-color #d8d8d8
+    }
+}
+
+.infoboxes {
+    .infobox-title {
+        font-size 16px
+        font-family Roboto
+        color #757575
+    }
+    
+    p {
+        color #bdbdbd
+        display block !important
+    }
+    > * {
+        display none
+    }
+}

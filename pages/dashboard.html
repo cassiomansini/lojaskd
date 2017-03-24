@@ -1,0 +1,251 @@
+--- 
+layout: default 
+title: Acompanhamento do Pedido 
+permalink: /acompanhamento-pedido/ 
+---
+<header class="mt-20 mb-20">
+    <div class="wrapper">
+        <div class="page-title">
+            Acompanhar pedido
+            <a class="mt-5" href="http://lojaskd.com.br" target="_blank">LojasKD.com.br</a>
+        </div>
+        <a href="#" class="mr-20">Login/Cadastro <i class="fa fa-external-link"></i></a>
+        <a href="#" class="mr-20">Atendimento <i class="fa fa-external-link"></i></a>
+        <a href="#" class="mr-20">Promoções <i class="fa fa-external-link"></i></a>
+        <a href="#">Sair</a>
+
+        <div class="mobile-nav-trigger">
+            <i class="fa fa-ellipsis-v"></i>
+        </div>
+
+        <div class="mobile-nav">
+            <p class="m-0">No site da LojasKD:</p>
+            <a href="#" class="mtb-10">Login/Cadastro <i class="fa fa-external-link"></i></a>
+            <a href="#" class="mtb-10">Atendimento <i class="fa fa-external-link"></i></a>
+            <a href="#" class="mtb-10">Promoções <i class="fa fa-external-link"></i></a>
+            <a href="#">Sair</a>
+        </div>
+    </div>
+
+</header>
+<!-- /header -->
+<section class="container pedido">
+    <div class="wrapper">
+        <div class="detalhes">
+            <div class="panel">
+                <h3 class="header-painel grey">Detalhes do pedido</h3>
+                <p class="mt-10 mb-0 grey">Status atual</p>
+                <p class="mt-0 green info">Acompanhando seus móveis</p>
+                <p class="mt-10 mb-0 grey">Nº do Pedido</p>
+                <p class="mt-0 info">11225589</p>
+                <p class="mt-10 mb-0 grey">Produtos</p>
+                <div class="accordion-trigger numero-de-produtos">
+                    <p class="m-0 info">12 <i class="fa fa-caret-down"></i></p>
+                    <ul class="accordion-content">
+                        <li>1 item enviado p/ fábrica</li>
+                        <li>5 itens em produção</li>
+                        <li>3 itens com a transportadora</li>
+                        <li>3 itens entregues</li>
+                    </ul>
+                </div>
+                <p class="mt-10 mb-0 grey">Data do Pedido</p>
+                <p class="mt-0 info">09/01/2017</p>
+                <p class="mt-10 mb-0 grey">Forma de Pagamento</p>
+                <p class="mt-0 info">Cartão de crédito Mastercard</p>
+                <p class="mt-10 mb-0 grey">Prazo de entrega</p>
+                <p class="mt-0 info">00/00/2000 a 00/00/0000</p>
+                <p class="mt-10 mb-0 grey">Endereço de entrega</p>
+                <p class="mt-0 info">Avenida Marechal Mário Guedes, 40 Apto 192 Jaguaré 05348010 SÃO PAULO - SP</p>
+            </div>
+        </div>
+        <div class="andamento">
+            <div class="panel">
+                <h3 class="header-painel grey">Andamento do pedido</h3>
+                <ul class="timeline mt-25">
+                    <li class="done">
+                        <div class="date">19 jan 2017</div>
+                        <div class="status-icon">
+                            <div class="image-wrapper">
+                                {% include check-icon.svg %}
+                            </div>
+                        </div>
+                        <div class="accordion-trigger status-text">
+                            <p class="accordion-header m-0"> 
+                                <span class="text-left">Novo</span> 
+                                <img class="closed" src="{{ site.url }}/assets/img/ic_info_outline.png" alt="">
+                                <img class="open" src="{{ site.url }}/assets/img/ic_info.png" alt="">
+                            </p>
+                            <p class="m-0 accordion-content">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. 
+                                Distinctio, minus doloribus harum officia.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="done last-done">
+                        <div class="date">25 jan 2017</div>
+                        <div class="status-icon">
+                            <div class="image-wrapper">
+                                {% include check-icon.svg %}
+                            </div>
+                        </div>
+                        <div class="accordion-trigger status-text">
+                            <p class="accordion-header m-0"> 
+                                <span class="text-left">Aprovado</span> 
+                                <img class="closed" src="{{ site.url }}/assets/img/ic_info_outline.png" alt="">
+                                <img class="open" src="{{ site.url }}/assets/img/ic_info.png" alt="">
+                            </p>
+                            <p class="m-0 accordion-content">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. 
+                                Distinctio, minus doloribus harum officia.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="date">28 jan 2017</div>
+                        <div class="status-icon">
+                            <div class="image-wrapper">
+                                {% include watch-icon.svg %}
+                            </div>
+                        </div>
+                        <div class="accordion-trigger status-text">
+                            <p class="accordion-header m-0"> 
+                                <span class="text-left">Acompanhando seus móveis</span> 
+                                <img class="closed" src="{{ site.url }}/assets/img/ic_info_outline.png" alt="">
+                                <img class="open" src="{{ site.url }}/assets/img/ic_info.png" alt="">
+                            </p>
+                            <p class="m-0 accordion-content">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. 
+                                Distinctio, minus doloribus harum officia.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date"></div>
+                        <div class="status-icon">
+                            <div class="image-wrapper"></div>
+                        </div>
+                        <div class="accordion-trigger status-text">
+                            <p class="accordion-header m-0"> 
+                                <span class="text-left">Recebimento</span> 
+                                <img class="closed" src="{{ site.url }}/assets/img/ic_info_outline.png" alt="">
+                                <img class="open" src="{{ site.url }}/assets/img/ic_info.png" alt="">
+                            </p>
+                            <p class="m-0 accordion-content">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. 
+                                Distinctio, minus doloribus harum officia.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="notificacao mtb-30">
+                <div class="icon-wrap">
+                    <i class="fa fa-comment-o"></i>
+                </div>
+                <div class="text-wrap">
+                    Acompanhamos cada detalhe da produção até a entrega de cada um dos seus móveis. Quer ver? Confira!
+                </div>
+            </div>
+        </div>
+        <div class="produtos">
+            <div class="panel">
+                <h3 class="header-painel grey">Produtos</h3>
+                <ul class="product-details">
+                    <li>
+                        <div class="product-heading">
+                            <img src="https://placehold.it/88x88" alt="">
+                            <div class="text-wrapper">
+                                <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusantium a ullam illum neque. Cum.</p>
+                                <p class="small mt-10">cód. 18993</p>                                
+                            </div>
+                        </div>
+                        <div class="product-brief mt-15">
+                            <p><small>Quantidade:</small> 1</p>
+                            <p><small>Preço total:</small> R$ 385,90</p>
+                            <p><small>Nota fiscal:</small> <a href="#">Download disponível</a></p>
+                            <div class="accordion-trigger status-text">
+                                <p class="accordion-header m-0 infobox-trigger"> 
+                                    <small>Status atual:</small>
+                                    <span class="green">Com a transportadora</span>
+                                    <img class="closed ml-15" src="{{ site.url }}/assets/img/ic_info_outline.png" alt="">
+                                    <img class="open ml-15" src="{{ site.url }}/assets/img/ic_info.png" alt="">
+                                </p>
+                                <div class="m-0 accordion-content">
+                                    <div class="timeline-horizontal pt-20">
+                                        <i data-infobox="11" class="fa fa-industry done"></i>
+                                        <span></span>
+                                        <i data-infobox="12" class="fa fa-archive done last-done"></i>
+                                        <span></span>
+                                        <i data-infobox="13" class="fa fa-truck active"></i>
+                                        <span></span>
+                                        <i data-infobox="14" class="fa fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="infoboxes">
+                                <div class="infobox11 mt-15 mlr-15">
+                                    <h4 class="infobox-title">Produzindo</h4>
+                                    <p>Para sua segurança, estamos confirmando seu pagamento.</p>
+                                    <p>Precisa de ajuda para escolher cor, material, acertar as dimensões corretas e resolver qualquer outra <a href="#">dúvida</a>? Conte com a nossa equipe de atendimento.</p>
+                                </div>
+                                <div class="infobox12 mt-15 mlr-15">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, aut.</div>
+                                <div class="infobox13 mt-15 mlr-15">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, aut.</div>
+                                <div class="infobox14 mt-15 mlr-15">4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, aut.</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-heading">
+                            <img src="https://placehold.it/88x88" alt="">
+                            <div class="text-wrapper">
+                                <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusantium a ullam illum neque. Cum.</p>
+                                <p class="small mt-10">cód. 18993</p>                                
+                            </div>
+                        </div>
+                        <div class="product-brief mt-15">
+                            <p><small>Quantidade:</small> 1</p>
+                            <p><small>Preço total:</small> R$ 385,90</p>
+                            <p><small>Nota fiscal:</small> <a href="#">Download disponível</a></p>
+                            <div class="accordion-trigger status-text">
+                                <p class="accordion-header m-0 infobox-trigger"> 
+                                    <small>Status atual:</small>
+                                    <span class="green">Com a transportadora</span>
+                                    <img class="closed ml-15" src="{{ site.url }}/assets/img/ic_info_outline.png" alt="">
+                                    <img class="open ml-15" src="{{ site.url }}/assets/img/ic_info.png" alt="">
+                                </p>
+                                <div class="m-0 accordion-content">
+                                    <div class="timeline-horizontal pt-20">
+                                        <i data-infobox="21" class="fa fa-industry done"></i>
+                                        <span></span>
+                                        <i data-infobox="22" class="fa fa-archive done last-done"></i>
+                                        <span></span>
+                                        <i data-infobox="23" class="fa fa-truck active"></i>
+                                        <span></span>
+                                        <i data-infobox="24" class="fa fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="infoboxes">
+                                <div class="infobox21 mt-15 mlr-15">
+                                    <h4 class="infobox-title">Produzindo</h4>
+                                    <p>Para sua segurança, estamos confirmando seu pagamento.</p>
+                                    <p>Precisa de ajuda para escolher cor, material, acertar as dimensões corretas e resolver qualquer outra <a href="#">dúvida</a>? Conte com a nossa equipe de atendimento.</p>
+                                </div>
+                                <div class="infobox22 mt-15 mlr-15">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, aut.</div>
+                                <div class="infobox23 mt-15 mlr-15">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, aut.</div>
+                                <div class="infobox24 mt-15 mlr-15">4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, aut.</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+.accordion-trigger {
+    &.numero-de-produtos {
+        i.fa {
+            margin-left 10px
+            color azul
+        }
+        .ui-state-active {}
+        .accordion-content {
+            background-color #ebebeb
+            padding 5px 15px
+            margin-top 10px
+            
+            li {
+                margin 5px 0
+                color azul
+            }
+        }
+    }
+
+    .accordion-header {
+        cursor pointer
+
+        .ui-accordion-header-icon {
+            display none
+        }
+
+        .open {
+            display none
+        }
+        
+        &.ui-state-active {
+            .open {
+                display inline-block
+            }
+            .closed {
+                display none
+            }
+        }
+    }
+}

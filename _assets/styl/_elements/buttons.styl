@@ -1,0 +1,37 @@
+a {
+    color #03a9f4
+    cursor pointer
+}
+
+button {
+    cursor pointer
+    outline 0
+}
+
+a.small {
+    font-size 12px
+}
+
+.btn-submit {
+    display block
+    width 100%
+    
+    background-color azul
+    color white
+    border 0
+    font-size 1rem
+    padding 10px
+    border-radius 3px
+    
+    box-shadow 0 4px 20px 2px alpha(black, .19)
+    transition 100ms
+    
+    &:hover {
+        box-shadow 0 4px 20px 2px alpha(black, .24)    
+    }
+    
+    &:active {
+        box-shadow 0 3px 20px 2px alpha(black, .09)
+        transform: translateY(1px);
+    }
+}

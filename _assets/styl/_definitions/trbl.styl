@@ -1,0 +1,18 @@
+trbl(t, args...)
+  top t
+  if length(args) > 0
+    right args[0]
+  else
+    right t
+
+  if length(args) > 1
+    bottom args[1]
+  else
+    bottom t
+
+  if length(args) > 2
+    left args[2]
+  else if length(args) > 0
+    left args[0]
+  else
+    left t
